@@ -1,5 +1,10 @@
 # Task App
 
+## Requirements
+
+- Node.js (https://nodejs.org)
+- Angular CLI -> npm install -g @angular/cli
+
 ## 1. Project Overview
 
 This is a Task Management application with categories that allows creating, editing, and deleting tasks.  
