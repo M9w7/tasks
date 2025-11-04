@@ -1,0 +1,25 @@
+<div class="task-card">
+  <div class="title-row">
+    <input
+      [ngModel]="task.title"
+      placeholder="Task title"
+      class="title-input"
+    />
+    <button class="remove-btn" (click)="deleteTask(task.id)">
+      <img src="assets/icons/remove.png" alt="Delete" />
+    </button>
+  </div>
+  <div class="input-group">
+    <img src="assets/icons/calendar.png" alt="Due Date Icon" class="icon" />
+    <input [ngModel]="task.dueDate" placeholder="Task due date" />
+  </div>
+  <div class="input-group">
+    <img src="assets/icons/user.png" alt="Creator Icon" class="icon" />
+    <input [ngModel]="task.creator" placeholder="Task creator" />
+  </div>
+  <textarea
+    [ngModel]="task.description"
+    placeholder="Task description"
+    id="input-desc"
+  ></textarea>
+</div>

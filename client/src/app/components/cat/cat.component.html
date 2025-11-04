@@ -1,0 +1,13 @@
+<div class="category-card">{{ category.name }}</div>
+<div id="container-tasks">
+  <ng-container *ngFor="let task of tasks">
+    <app-task *ngIf="task.category === category.name" [task]="task" @blurFade>
+    </app-task>
+  </ng-container>
+  <div id="add-task">
+    <button (click)="onAddTask()" @blurFade>
+      <span class="text">Add Task </span>
+      <span class="plus"> + </span>
+    </button>
+  </div>
+</div>

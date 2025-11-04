@@ -1,0 +1,19 @@
+<div id="header">
+  <h1>Tasks</h1>
+</div>
+
+<div id="main">
+  <div id="container-cats">
+    <app-cat
+      *ngFor="let cat of cats"
+      [category]="cat"
+      [tasks]="tasks"
+    ></app-cat>
+    <div id="add-cat">
+      <button (click)="onAddCat()">
+        <span class="text">Add Category </span>
+        <span class="plus"> + </span>
+      </button>
+    </div>
+  </div>
+</div>

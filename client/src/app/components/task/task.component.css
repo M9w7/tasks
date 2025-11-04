@@ -1,0 +1,90 @@
+input {
+  background-color: var(--primary-color-none);
+  color: white;
+  display: block;
+  width: 40px;
+}
+
+.task-card {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  gap: 4px;
+}
+
+.task-card input {
+  width: 80%;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+}
+
+input:hover,
+#input-desc:hover {
+  border: 1px solid white;
+}
+
+.task-card input:focus #input-desc {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+#input-desc {
+  overflow-wrap: break-word;
+  resize: none;
+  width: 90%;
+  height: max-content;
+  overflow: none;
+  flex: 1;
+  color: white;
+  background-color: var(--primary-color-none);
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 10px;
+}
+
+.input-group .icon {
+  width: 24px;
+  height: 24px;
+}
+
+.title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.title-input {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.remove-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  transition: transform 0.2s ease;
+}
+
+.remove-btn img {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.2s ease;
+}
+
+.remove-btn:hover {
+  transform: scale(1.2);
+}
