@@ -1,5 +1,9 @@
 # Task App
 
+## Requirements
+
+- Node.js (https://nodejs.org)
+
 ## 1. Project Overview
 
 This is a Task Management application with categories that allows creating, editing, and deleting tasks.  
@@ -19,28 +23,19 @@ The application consists of:
 
 ### Backend
 
-1. Navigate to the server folder:
-   cd server
-2. Install dependencies
-   npm install
-3. Create a .env file which contains: (Normally not in Readme :D)
-   PORT=3000
-4. Start the backend server (with nodemon):
-   npm start
+1. Navigate to the server folder: **cd server**
+2. Install dependencies: **npm install**
+3. Create a .env file which contains (normally not in Readme :D): **PORT=3000**
+4. Start the backend server (with nodemon): **npm start**
 5. SQLite DB gets created, connected and filled up with mockdata (from server/src/mockdata.js)
-6. Now you can access the Swagger UI for checking and testing the API at:
-   http://localhost:3000/api-docs
+6. Now you can access the Swagger UI for checking and testing the API at: (http://localhost:3000/api-docs)
 
 ### Frontend
 
-1. Navigate to the client folder:
-   cd client
-2. Install dependencies
-   npm install
-3. Start the Angular application:
-   ng serve
-4. Now you can access the frontend at:
-   http://localhost:4200
+1. Navigate to the client folder: **cd client**
+2. Install dependencies: **npm install**
+3. Start the Angular application: **npm run start**
+4. Now you can access the frontend at: (http://localhost:4200)
 
 ## 4. Features
 
@@ -57,4 +52,4 @@ The application consists of:
 - Persist animation states
 - Advanced filtering and sorting options
 
-Loading...
+Keep in mind this app is under construction...
